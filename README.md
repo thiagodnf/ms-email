@@ -2,6 +2,13 @@
 
 A microservice in Node.js for email management
 
+# Screenshots
+
+An example of email sent by using this tool:
+
+<img src="https://user-images.githubusercontent.com/114015/72455458-8fcc1380-37a1-11ea-9fa5-75aa77a06a30.png" width="500px"/>
+
+
 # Locales Supported
 
 Right now **2** locales are supported.
@@ -15,10 +22,10 @@ Right now **2** locales are supported.
 
 This project supports the following email templates:
 
-| Name| Description |  
-| :-----: | :---- | 
-| confirm-email | Send it when the users sign up in your app | 
-| user-activated | Send it when the users activate their accounts | 
+| Name| Description | Screenshot | 
+| :-----: | :---- | :----: | 
+| confirm-email | Send it when the users sign up in your app | [Click here](https://github.com/thiagodnf/ms-email/blob/master/assets/screenshots/confirm-email.png) |
+| user-activated | Send it when the users activate their accounts | [Click here](https://github.com/thiagodnf/ms-email/blob/master/assets/screenshots/user-activated.png) |
 
 # Deploy on Heroku
 
