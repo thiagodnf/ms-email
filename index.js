@@ -16,7 +16,7 @@ const { createErrorHandlerMiddleware } = require('./src/middlewares/error.middle
 const connectDB = require('./src/helpers/db.helper');
 const logger = require("./src/helpers/logger.helper");
 
-const { PageNotFoundError } = require('./src/errors/unprocessableEntity.error');
+const { PageNotFoundError } = require('./src/errors/notFound.error');
 
 connectDB();
 
