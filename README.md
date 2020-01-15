@@ -27,6 +27,10 @@ This project supports the following email templates:
 | confirm-email | Send it when the users sign up in your app | [Click here](https://github.com/thiagodnf/ms-email/blob/master/assets/screenshots/confirm-email.png) |
 | user-activated | Send it when the users activate their accounts | [Click here](https://github.com/thiagodnf/ms-email/blob/master/assets/screenshots/user-activated.png) |
 
+# How to use
+
+Once the app is working, you can send request for the following API
+
 # Deploy on Heroku
 
 Click the button below to deploy this project on Heroku
