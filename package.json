@@ -32,6 +32,7 @@
         "normalize-mongoose": "^0.0.1",
         "pug": "^2.0.4",
         "rest-api-errors": "^1.2.1",
-        "validator": "^12.1.0"
+        "validator": "^12.1.0",
+        "winston": "^3.2.1"
     }
 }
