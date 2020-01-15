@@ -3,5 +3,16 @@
   "description": "A microservice in Node.js for e-mail management",
   "repository": "https://github.com/thiagodnf/ms-email",
   "logo": "https://user-images.githubusercontent.com/114015/72432507-fa675a00-3775-11ea-9d0e-52ac89d7909d.png",
-  "keywords": ["microservices", "nodejs", "email-mananger", "expressjs"]
+  "keywords": ["microservices", "nodejs", "email-mananger", "expressjs"],
+  "env": {
+    "DATABASE_URL": {
+        "description": "The database url",
+        "required": true
+    },
+    "API_TOKEN": {
+        "description": "The api token",
+        "required": true,
+        "generator": "secret"
+    }
+  }
 }
