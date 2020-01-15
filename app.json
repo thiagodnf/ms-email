@@ -2,6 +2,6 @@
   "name": "MS Email",
   "description": "A microservice in Node.js for e-mail management",
   "repository": "https://github.com/thiagodnf/ms-email",
-  "logo": "https://user-images.githubusercontent.com/114015/72431788-65b02c80-3774-11ea-833d-31ad3edbf9a2.png",
+  "logo": "https://user-images.githubusercontent.com/114015/72432315-82009900-3775-11ea-8841-28c08caa488a.png",
   "keywords": ["microservices", "nodejs", "email-mananger", "expressjs"]
 }
