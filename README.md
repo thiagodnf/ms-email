@@ -26,4 +26,4 @@ Click the button below to deploy this project on Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-With the "Deploy to Heroku" button, you can easily deploy the MS Email to Heroku from your web browser by following the steps below.
+With the "Deploy to Heroku" button, you can easily deploy MS Email to Heroku from your web browser.
