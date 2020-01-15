@@ -2,7 +2,7 @@
 
 A microservice in Node.js for e-mail management
 
-# Locales supported
+# Locales Supported
 
 Right now **2** locales are supported.
 
@@ -11,7 +11,7 @@ Right now **2** locales are supported.
 | en-US | English (US) | 
 | pt-BR | Portuguese (Brazil) |
  
-# Templates
+# Available Templates
 
 This project supports the following email templates:
 
@@ -20,7 +20,7 @@ This project supports the following email templates:
 | confirm-email | Send it when the users sign up in your app | 
 | user-activated | Send it when the users activate their accounts | 
 
-# Deploy the app on Heroku
+# Deploy on Heroku
 
 Click the button below to deploy this project on Heroku
 
