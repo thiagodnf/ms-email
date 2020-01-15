@@ -4,10 +4,12 @@ var mongoose = require('mongoose');
 
 const config = require('../config/env.config');
 
+const logger = require("./logger.helper");
+
 function gracefulExit() {
 
     mongoose.connection.close(function () {
-        console.log("Mongoose default connection is disconnected due to application termination");
+        logger.info("Mongoose default connection is disconnected due to application termination");
         process.exit(0)
     });
 }
@@ -22,9 +24,10 @@ module.exports = function () {
         useUnifiedTopology: true,
         useCreateIndex: true,
     }).then(() => {
-        console.log('Success! Database connected')
+        logger.info('Success! Database connected')
     }).catch(err => {
-        console.log('Database connection error')
+        logger.error('Database connection error')
+        logger.error('Reason: ', err.message)
         process.exit();
     });
 }
