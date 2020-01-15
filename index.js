@@ -4,6 +4,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const createLocaleMiddleware = require('express-locale');
+const morgan = require('morgan')
 
 const config = require("./src/config/env.config");
 
@@ -18,6 +19,7 @@ const { PageNotFoundError } = require('./src/errors/unprocessableEntity.error');
 connectDB();
 
 // ExpressJS's Settings
+app.use(morgan('dev'))
 app.use(createLocaleMiddleware({ "default": "en-US" }));
 app.use(createI18nMiddleware());
 app.use(createCorsMiddleware());

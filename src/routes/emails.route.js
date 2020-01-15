@@ -19,4 +19,9 @@ router.post('/confirm-email/send', [
     EmailsController.confirmEmail
 ]);
 
+router.post('/user-activated/send', [
+    ValidatorMiddleware.validate(EmailsValidator.userActivated),
+    EmailsController.userActivated
+]);
+
 module.exports = router;

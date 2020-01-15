@@ -13,6 +13,10 @@ const availableContents = {
     "confirm-email": {
         "en-US": pug.compileFile('./src/emails/types/confirm-email/confirm-email.en-US.pug'),
         "pt-BR": pug.compileFile('./src/emails/types/confirm-email/confirm-email.pt-BR.pug')
+    },
+    "user-activated": {
+        "en-US": pug.compileFile('./src/emails/types/user-activated/user-activated.en-US.pug'),
+        "pt-BR": pug.compileFile('./src/emails/types/user-activated/user-activated.pt-BR.pug'),
     }
 }
 
@@ -60,6 +64,23 @@ exports.confirmEmail = (req, res, next) => {
 
     sendEmail(req.body.email, {
        subject: req.polyglot.t("subjectConfirmEmail"),
+       content: html
+    }).then((info) =>{
+        res.status(200).send(info);
+    }).catch((error) => {
+        return next(error);
+    });
+}
+
+exports.userActivated = (req, res, next) => {
+
+    const html = getEmail("user-activated", req.locale.toString(), {
+        email: req.body.email,
+        welcomeUrl: req.body.welcomeUrl,
+    });
+
+    sendEmail(req.body.email, {
+       subject: req.polyglot.t("subjectUserActivated"),
        content: html
     }).then((info) =>{
         res.status(200).send(info);
