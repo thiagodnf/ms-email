@@ -23,4 +23,4 @@ exports.createI18nMiddleware = () => {
 
         next();
     };
-}
+};

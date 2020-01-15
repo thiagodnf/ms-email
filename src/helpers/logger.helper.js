@@ -1,6 +1,5 @@
-"use strict";
+'use strict';
 
-const winston = require("winston");
 const util = require('util');
 const { createLogger, format, transports } = require('winston');
 const { combine, colorize, timestamp, printf, padLevels} = format;
@@ -44,20 +43,20 @@ class Logger {
 
         return {
             write: function (message, encoding) {
-                that.debug(message.replace( /[\r\n]+/gm, "" ));
+                that.debug(message.replace( /[\r\n]+/gm, '' ));
             }
         };
     }
 
-    info(message, args="") {
+    info(message, args='') {
         this.logger.info(message, args);
     }
 
-    debug(message, args="") {
+    debug(message, args='') {
         this.logger.debug(message, args);
     }
 
-    error(message, args="") {
+    error(message, args='') {
         this.logger.error(message, args);
     }
 }

@@ -1,31 +1,26 @@
-'use strict';
 
 const { validationResult } = require('express-validator');
 
 const { ValidationError } = require('../errors/unprocessableEntity.error');
 
-exports.validate = (validations) => {
+exports.validate = (validations) => async (req, res, next) => {
+    await Promise.all(validations.map((validation) => validation.run(req)));
 
-    return async (req, res, next) => {
+    const errors = validationResult(req);
 
-        await Promise.all(validations.map(validation => validation.run(req)));
+    if (errors.isEmpty()) {
+        return next();
+    }
 
-        const errors = validationResult(req);
+    const validationError = new ValidationError();
 
-        if (errors.isEmpty()) {
-            return next();
-        }
+    errors.array().forEach((e) => {
 
-        let error = new ValidationError();
-
-        errors.array().forEach((e) => {
-
-            error.errors.push({
-                "field": e.param,
-                "message": req.polyglot.t(e.msg)
-            });
+        validationError.errors.push({
+            field: e.param,
+            message: req.polyglot.t(e.msg),
         });
+    });
 
-        return next(error);
-    };
-}
+    return next(validationError);
+};

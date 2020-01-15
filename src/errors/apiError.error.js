@@ -1,8 +1,8 @@
-'use strict';
 
 class APIError extends Error {
 
-    constructor(status, type){
+    constructor(status, type) {
+
         super(type);
 
         this.status = status;
@@ -10,7 +10,9 @@ class APIError extends Error {
         this.type = type;
         this.message = this.constructor.name;
         this.errors = [];
+
     }
+
 }
 
 exports.APIError = APIError;

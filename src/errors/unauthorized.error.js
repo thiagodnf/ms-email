@@ -1,11 +1,11 @@
 'use strict';
 
-const { APIError } = require("./apiError.error");
+const { APIError } = require('./apiError.error');
 
 class UnauthorizedError extends APIError {
 
     constructor() {
-        super(401, "UnauthorizedError");
+        super(401, 'UnauthorizedError');
     }
 }
 

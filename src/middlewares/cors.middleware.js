@@ -16,4 +16,4 @@ exports.createCorsMiddleware = () => {
             return next();
         }
     };
-}
+};

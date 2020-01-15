@@ -1,6 +1,6 @@
 'use strict';
 
-var mongoose = require('mongoose');
+// var mongoose = require('mongoose');
 
 const nodemailer = require('nodemailer');
 
@@ -33,4 +33,4 @@ module.exports = function (emailTo, email) {
             return resolve(info);
         });
     });
-}
+};

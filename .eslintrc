@@ -1,0 +1,14 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 2018
+    },
+    "rules": {
+        "indent": ["error", 4],
+        "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+        "semi": ["error", "always"],
+        "no-unused-vars": ["error", {"args": "none"}]
+    },
+    "env": {
+        "es6": true
+    }
+}

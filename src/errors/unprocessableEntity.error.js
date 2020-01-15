@@ -1,11 +1,11 @@
 'use strict';
 
-const { APIError } = require("./apiError.error");
+const { APIError } = require('./apiError.error');
 
 class UnprocessableEntity extends APIError {
 
     constructor() {
-        super(422, "UnprocessableEntity");
+        super(422, 'UnprocessableEntity');
     }
 }
 
