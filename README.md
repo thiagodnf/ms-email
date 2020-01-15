@@ -1,6 +1,6 @@
 <img src="https://user-images.githubusercontent.com/114015/72431788-65b02c80-3774-11ea-833d-31ad3edbf9a2.png" width="500px"/>
 
-A microservice in Node.js for e-mail management
+A microservice in Node.js for email management
 
 # Locales Supported
 
