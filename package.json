@@ -1,13 +1,13 @@
 {
-    "name": "ms-account",
+    "name": "ms-email",
     "version": "1.0.0",
-    "description": "A microservice for user account management",
+    "description": "A microservice for e-mail management",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node index.js",
         "dev": "nodemon index.js",
-        "apidoc": "apidoc -i src/ -o apidoc/"
+        "apidoc": "apidoc -i src/ -o docs/apidoc/"
     },
     "author": "Thiago Ferreira",
     "license": "ISC",

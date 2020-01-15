@@ -46,8 +46,7 @@ function getEmail(content, language="en-US", locals){
 exports.view = (req, res, next) => {
 
     const html = getEmail(req.params.type, req.locale.toString(), {
-        // email: "teste@tete.com",
-        // confirmationUrl: "https://www.google.com.br",
+
     });
 
     res.set('Content-Type', 'text/html');
