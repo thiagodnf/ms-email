@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/thiagodnf/ms-email/master/assets/images/logo-name.png?token=AAA32X3PGUUWS3BN5U6RXHK6D3WVC" width="450px"/>
+<img src="https://raw.githubusercontent.com/thiagodnf/ms-email/master/assets/images/logo-name.png?token=AAA32X44CGQB4PVWPUGTL4K6D333W" width="450px"/>
 
 A microservice in Node.js for e-mail management
 
