@@ -1,0 +1,7 @@
+{
+  "name": "MS Email",
+  "description": "A microservice in Node.js for e-mail management",
+  "repository": "https://github.com/thiagodnf/ms-email",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["microservices", "nodejs", "email-mananger", "expressjs"]
+}
