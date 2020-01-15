@@ -2,6 +2,15 @@
 
 A microservice in Node.js for e-mail management
 
+# Templates
+
+This project supports the following email templates:
+
+| Name| Language | Description |  
+|-----|-----| ----| 
+| confirm-email | pt-BR, en-US | An email sent when a user is | 
+| user-activated | pt-BR, en-US | An email sent when a user is | 
+
 # Deploy the app on Heroku
 
 Click the button below to deploy this project on Heroku
