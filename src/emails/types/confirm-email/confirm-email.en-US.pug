@@ -1,0 +1,18 @@
+div(class="card mt-5 mb-5")
+    div(class="card-header") #{appName}
+    div(class="card-body")
+        h1 Welcome
+        p #{email}!
+        p Thank you for signing up for #{appName}!
+        p To complete your account sign-up, please click on the button below to confirm your email:
+        div(class="text-center mb-5 mt-5")
+            a(href=confirmationUrl class="btn btn-primary btn-lg") Confirm my account
+        div(class="mb-5 small")
+            p or copy/paste link in your browser:
+            a(href=confirmationUrl) #{confirmationUrl}
+        p If you didn't request this, please ignore this email.
+        div(class="mt-5")
+            hr
+            p(class="font-weight-bold mb-0") Yours, #{appSupportName}
+            p(class="mb-0")
+                a(href='mailto:' + appSupportEmail) #{appSupportEmail}

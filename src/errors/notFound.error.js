@@ -12,4 +12,12 @@ class NotFoundError extends APIError {
 class PageNotFoundError extends NotFoundError {
 }
 
+class ContentNotFoundError extends NotFoundError {
+}
+
+class LanguageNotFoundError extends NotFoundError {
+}
+
 exports.PageNotFoundError = PageNotFoundError;
+exports.ContentNotFoundError = ContentNotFoundError;
+exports.LanguageNotFoundError = LanguageNotFoundError;

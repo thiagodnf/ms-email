@@ -3,7 +3,8 @@
 const Polyglot  = require('node-polyglot');
 
 const availableLanguages = {
-    'en-US': require('../locales/locale.en-US')
+    'en-US': require('../locales/locale.en-US'),
+    'pt-BR': require('../locales/locale.pt-BR')
 };
 
 exports.createI18nMiddleware = () => {

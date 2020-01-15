@@ -12,13 +12,12 @@ function gracefulExit() {
     });
 }
 
-
 module.exports = function () {
 
     process.on('SIGINT', gracefulExit).on('SIGTERM', gracefulExit);
 
     //Set up default mongoose connection
-    mongoose.connect(config.DATABASE_URL, {
+    mongoose.connect(config.databaseUrl, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useCreateIndex: true,
