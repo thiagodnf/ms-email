@@ -7,7 +7,7 @@ A microservice in Node.js for e-mail management
 Right now **2** locales are supported.
 
 | Language Code| Language Name |  
-|-----| ----| 
+|-----| :---- | 
 | en-US | English (US) | 
 | pt-BR | Portuguese (Brazil) |
  
