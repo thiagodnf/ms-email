@@ -2,9 +2,9 @@
 
 A microservice in Node.js for e-mail management
 
-# Locales
+# Locales supported
 
-Currently, the template emails supports the following locales:
+Right now **2** locales are supported.
 
  - en-US
  - pt-BR
