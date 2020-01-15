@@ -7,7 +7,7 @@ A microservice in Node.js for e-mail management
 Right now **2** locales are supported.
 
 | Language Code| Language Name |  
-|-----| :---- | 
+| :-----: | :---- | 
 | en-US | English (US) | 
 | pt-BR | Portuguese (Brazil) |
  
@@ -16,7 +16,7 @@ Right now **2** locales are supported.
 This project supports the following email templates:
 
 | Name| Description |  
-|-----| ----| 
+| :-----: | :---- | 
 | confirm-email | Send it when the users sign up in your app | 
 | user-activated | Send it when the users activate their accounts | 
 
