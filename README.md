@@ -15,7 +15,7 @@ This project supports the following email templates:
 
 | Name| Description |  
 |-----| ----| 
-| confirm-email | Send it when the user sign up in your app | 
+| confirm-email | Send it when the users sign up in your app | 
 | user-activated | Send it when the users activate their accounts | 
 
 # Deploy the app on Heroku
