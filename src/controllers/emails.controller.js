@@ -5,22 +5,22 @@ const pug = require('pug');
 const config = require("../config/env.config");
 const sendEmail = require("../helpers/sendEmail.helper");
 
-const {ContentNotFoundError, LanguageNotFoundError} = require("../errors/notFound.error")
+const { ContentNotFoundError, LanguageNotFoundError } = require("../errors/notFound.error")
 
 const compiledTheme = pug.compileFile('./src/emails/themes/default/theme.pug');
 
 const availableContents = {
     "confirm-email": {
-        "en-US": pug.compileFile('./src/emails/types/confirm-email/confirm-email.en-US.pug'),
-        "pt-BR": pug.compileFile('./src/emails/types/confirm-email/confirm-email.pt-BR.pug')
+        "en-US": pug.compileFile('./src/emails/templates/confirm-email/confirm-email.en-US.pug'),
+        "pt-BR": pug.compileFile('./src/emails/templates/confirm-email/confirm-email.pt-BR.pug')
     },
     "user-activated": {
-        "en-US": pug.compileFile('./src/emails/types/user-activated/user-activated.en-US.pug'),
-        "pt-BR": pug.compileFile('./src/emails/types/user-activated/user-activated.pt-BR.pug'),
+        "en-US": pug.compileFile('./src/emails/templates/user-activated/user-activated.en-US.pug'),
+        "pt-BR": pug.compileFile('./src/emails/templates/user-activated/user-activated.pt-BR.pug'),
     }
 }
 
-function getEmail(content, language="en-US", locals){
+function getEmail(content, language = "en-US", locals) {
 
     if (!availableContents[content]) {
         throw new ContentNotFoundError();
@@ -32,11 +32,12 @@ function getEmail(content, language="en-US", locals){
 
     const compiledContent = availableContents[content][language];
 
-    locals.appName= config.appName;
-    locals.appSupportName= config.appSupportName;
-    locals.appSupportEmail= config.appSupportEmail;
+    locals.appName = config.appName;
+    locals.appSupportName = config.appSupportName;
+    locals.appSupportEmail = config.appSupportEmail;
 
     const html = compiledTheme({
+        appName: config.appName,
         content: compiledContent(locals)
     });
 
@@ -62,9 +63,9 @@ exports.confirmEmail = (req, res, next) => {
     });
 
     sendEmail(req.body.email, {
-       subject: req.polyglot.t("subjectConfirmEmail"),
-       content: html
-    }).then((info) =>{
+        subject: req.polyglot.t("subjectConfirmEmail"),
+        content: html
+    }).then((info) => {
         res.status(200).send(info);
     }).catch((error) => {
         return next(error);
@@ -79,9 +80,9 @@ exports.userActivated = (req, res, next) => {
     });
 
     sendEmail(req.body.email, {
-       subject: req.polyglot.t("subjectUserActivated"),
-       content: html
-    }).then((info) =>{
+        subject: req.polyglot.t("subjectUserActivated"),
+        content: html
+    }).then((info) => {
         res.status(200).send(info);
     }).catch((error) => {
         return next(error);

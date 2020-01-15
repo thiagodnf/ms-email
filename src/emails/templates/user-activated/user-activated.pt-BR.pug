@@ -1,0 +1,11 @@
+h1 Bem-vindo ao #{appName}
+p Estamos felizes em ter você a bordo!
+p Seu e-mail é: #[strong #{email}]
+p Pronto para começar? Clique abaixo para ir direto para o seu painel!
+div(class="text-center mb-5 mt-5")
+    a(href=welcomeUrl class="btn btn-primary btn-lg") Começar
+div(class="mt-5")
+    hr
+    p(class="font-weight-bold mb-0") Atenciosamente, #{appSupportName}
+    p(class="mb-0")
+        a(href='mailto:' + appSupportEmail) #{appSupportEmail}

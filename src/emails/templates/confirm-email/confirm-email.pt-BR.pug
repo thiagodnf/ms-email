@@ -1,0 +1,15 @@
+h1 Bem-vindo
+p #{email}!
+p Obrigado por se inscrever no #{appName}!
+p Para concluir a inscrição, clique no botão abaixo para confirmar seu e-mail:
+div(class="text-center mb-5 mt-5")
+    a(href=confirmationUrl class="btn btn-primary btn-lg") Confirmar minha conta
+div(class="mb-5 small")
+    p ou copie/cole o link no seu navegador:
+    a(href=confirmationUrl) #{confirmationUrl}
+p Se você não solicitou isso, ignore este email.
+div(class="mt-5")
+    hr
+    p(class="font-weight-bold mb-0") Atenciosamente, #{appSupportName}
+    p(class="mb-0")
+        a(href='mailto:' + appSupportEmail) #{appSupportEmail}

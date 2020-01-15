@@ -9,4 +9,7 @@ html(lang='en')
     style
         include css/style.css
   body
-    div(class="container-fluid") !{content}
+    div(class="container-fluid")
+        div(class="card mt-5 mb-5")
+            div(class="card-header") #{appName}
+            div(class="card-body") !{content}

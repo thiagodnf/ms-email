@@ -2,18 +2,16 @@
 
 module.exports = {
 
-    appName: process.env.APP_NAME || "MS E-mail",
-    appSupportName: process.env.APP_SUPPORT_NAME || "MS E-mail Team",
-    appSupportEmail: process.env.APP_SUPPORT_EMAIL || "team@ms-email.com",
+    appName: process.env.APP_NAME || "MS Email",
+    appEndpoint: process.env.APP_ENDPOINT || "http://localhost:3001",
 
-    "appEndpoint": "http://localhost:3001",
-    "apiEndpoint": "http://localhost:3001",
+    appSupportName: process.env.APP_SUPPORT_NAME || "MS Email Team",
+    appSupportEmail: process.env.APP_SUPPORT_EMAIL || "team@ms-email.com",
 
     port: process.env.PORT || 3001,
     databaseUrl: process.env.DATABASE_URL || "",
 
-    "jwtSecret": process.env.JWT_SECRET || "myS33!!creeeT",
-    "jwtExpirationInSeconds": 36000,
+    apiToken: process.env.API_TOKEN || "myS33!!creeeT",
 
     smtpHost: process.env.SMTP_HOST || 'smtp.mailtrap.io',
     smtpPort: process.env.SMTP_PORT || 2525,
