@@ -6,7 +6,8 @@
         "indent": ["error", 4],
         "quotes": ["error", "single", { "allowTemplateLiterals": true }],
         "semi": ["error", "always"],
-        "no-unused-vars": ["error", {"args": "none"}]
+        "no-unused-vars": ["error", {"args": "none"}],
+        "eqeqeq": ["error", "always"]
     },
     "env": {
         "es6": true

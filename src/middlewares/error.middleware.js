@@ -2,7 +2,9 @@
 const { APIError } = require('../errors/apiError.error');
 
 exports.createErrorHandlerMiddleware = () => {
-    return (error, req, res) => {
+
+    return (error, req, res, next) => {
+
         if (error instanceof APIError) {
             return res.status(error.status).json({
                 error: {

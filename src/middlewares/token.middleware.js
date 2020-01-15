@@ -4,7 +4,8 @@ const config = require('../config/env.config');
 const { MissingAuthorizationError, MissingBearerError, InvalidTokenError } = require('../errors/unauthorized.error');
 
 exports.validToken = (req, res, next) => {
-    const authorizationHeader = req.headers.authorization;
+
+    const authorizationHeader = req.headers['authorization'];
 
     if (!authorizationHeader) {
         return next(new MissingAuthorizationError());
