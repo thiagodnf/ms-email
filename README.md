@@ -13,10 +13,10 @@ Right now **2** locales are supported.
 
 This project supports the following email templates:
 
-| Name| Language | Description |  
-|-----|-----| ----| 
-| confirm-email | pt-BR, en-US | An email sent when a user is | 
-| user-activated | pt-BR, en-US | An email sent when a user is | 
+| Name| Description |  
+|-----| ----| 
+| confirm-email | Send it when the user sign up in your app | 
+| user-activated | Send it when the users activate their accounts | 
 
 # Deploy the app on Heroku
 
