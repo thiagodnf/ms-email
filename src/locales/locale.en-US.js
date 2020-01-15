@@ -8,6 +8,9 @@ module.exports = {
     "ValidationError": "Validation failed",
     "ContentNotFoundError": "Content not found",
     "LanguageNotFoundError": "Language not found",
+    "MissingAuthorizationError": "Missing authorization header",
+    "MissingBearerError": "Missing bearer",
+    "InvalidTokenError": "Invalid token",
 
     // Validation error messages
     'requiredField': "This is a required field",

@@ -46,7 +46,7 @@ function getEmail(content, language = "en-US", locals) {
 
 exports.view = (req, res, next) => {
 
-    const html = getEmail(req.params.type, req.locale.toString(), {
+    const html = getEmail(req.params.template, req.locale.toString(), {
 
     });
 
