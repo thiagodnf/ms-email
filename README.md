@@ -44,7 +44,6 @@ With the "Deploy to Heroku" button, you can easily deploy MS Email to Heroku fro
 1. Click the Deploy to Heroku button to go to the Heroku Dashboard to configure and deploy the app.
 2. Enter a Heroku app name (optional).
 3. Enter the following Heroku config variables.
-Channel ID: Found on the "Basic information" page in the Channel Console
-Channel secret: Found on the "Basic information" page in the Channel Console
-Callback URL: https:// + "Heroku app name" + .herokuapp.com/auth
-Click the Deploy button. Heroku then deploys this repository to a new Heroku app on your account.
+    - **DATABASE_URL**: The URL to your database
+    - **API_TOKEN**: The token used for accessing the API and send request
+4.Click the Deploy button. Heroku then deploys this repository to a new Heroku app on your account.
